@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './HelloWorld';
+import Counter from './Counter';
+import Module3List from './List';
+
+const produce = [
+    { name: "Apple", type: "Fruit" },
+    { name: "Banana", type: "Fruit" },
+    { name: "Carrot", type: "Vegetable" },
+    { name: "Broccoli", type: "Vegetable" },
+    { name: "Orange", type: "Fruit" },
+    { name: "Spinach", type: "Vegetable" }
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Class Work 04</h1>
       </header>
+      <HelloWorld/>
+      <Counter/>
+      <Module3List/>
     </div>
   );
 }
