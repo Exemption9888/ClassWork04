@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import HelloWorld from './HelloWorld';
 import Counter from './Counter';
+import FilteredList from './FilteredList';
 
 const produce = [
     { name: "Apple", type: "Fruit" },
@@ -18,6 +19,7 @@ class App extends Component {
             <div className="App">
                 <HelloWorld />
                 <Counter />
+                <FilteredList items={produce} />
             </div>
         );
     }
