@@ -1,7 +1,7 @@
+import React, { Component } from 'react';
 import './App.css';
 import HelloWorld from './HelloWorld';
 import Counter from './Counter';
-import Module3List from './List';
 
 const produce = [
     { name: "Apple", type: "Fruit" },
@@ -12,17 +12,15 @@ const produce = [
     { name: "Spinach", type: "Vegetable" }
 ];
 
-function App() {
-  return (
-    <div className="App">
-      <header>
-        <h1>Class Work 04</h1>
-      </header>
-      <HelloWorld/>
-      <Counter/>
-      <Module3List/>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <HelloWorld />
+                <Counter />
+            </div>
+        );
+    }
 }
 
 export default App;
