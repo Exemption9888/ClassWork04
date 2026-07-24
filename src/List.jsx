@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
-class Module3List extends Component {
+class List extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+    
     render () {
         return (
-            <div className="module">
-                <h1><u>Module 3</u></h1>
-                <h2>This is where I would add a List I guess</h2>
-            </div>
+            <ul>
+                {this.props.items.map((item => <li key={item.name}>{item.name}</li>))}
+            </ul>
         );
     }
 }
 
-export default Module3List;
+export default List;
